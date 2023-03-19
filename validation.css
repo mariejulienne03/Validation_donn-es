@@ -1,0 +1,118 @@
+@font-face{
+    font-family:"Roboto"; 
+    src: url("Roboto-Black.ttf") format("truetype"); 
+}
+@keyframes shakeX {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-10px); }
+    50% { transform: translateX(10px); }
+    75% { transform: translateX(-10px); }
+    100% { transform: translateX(0); }
+  }
+  
+  .shakeX {
+    animation: shakeX 0.1s;
+  }
+  
+
+body {
+    background: linear-gradient(to right, #423266,#D9CFEF);
+    align-items: center;
+}
+
+h3{
+    text-align: center;
+    margin-top: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6em;
+    color: white
+
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+form {
+    margin: auto; 
+    text-align:left;
+    margin-top: 1em;
+    padding-left: 2em;
+    padding-bottom: 2em;
+    border: 0.1px solid #2D2A30; 
+    border-radius:1%;
+    width: 500px;
+    height:700px;
+    background-color: #2D2A30;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.nom{
+    margin-top: 2em;
+    margin-bottom: 1.5em;
+    color: white;
+    font-size: 1.2em;
+}
+
+.email{
+    margin-bottom:0.5em;
+    color:white; 
+    font-size: 1.2em;
+}
+
+.mdp{
+    margin-bottom:0.5em;
+    color: white; 
+    font-size: 1.2em;
+}
+
+.conf_mdp{
+    margin-bottom :0.5em;
+    color: white; 
+    font-size: 1.2em;
+}
+
+input {
+    display: block;
+    width: 90%;
+    font-size: 18px;
+    color: #f1f1f1;
+    padding: 10px 0;
+    background: transparent;
+    border: none;
+    outline: 0;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+button{
+   margin-left: 6.5em;
+   background-color:#D9CFEF;
+   font-family: Arial, Helvetica, sans-serif;
+   min-width: 150px;
+   min-height: 50px;
+   border: 0.1px solid #2D2A30;
+   border-radius: 3px;
+   cursor: pointer;
+   color: #111;
+   font-size: 20px;
+}
+
+#mdp-consigne{
+    margin-top: 0.1em;
+    margin-bottom: 2em;
+    font-size: 0.8em;
+}
+
+#error-nom{
+    color: red; 
+    font-size: 0.8em;
+    margin-top: 0.1em;
+}
+
+#error-email{
+    color: red; 
+    font-size: 0.8em;
+    margin-top: 0.1em;
+}

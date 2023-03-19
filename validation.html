@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="validation.css">
+    <title>Document</title>
+    
+</head>
+<body>
+    
+    <div class="formulaire">
+
+        <form>
+            <h3>Inscrivez vous.</h3>
+
+         <div class="nom">
+                <label for="nom">Nom d'utilisateur</label>
+                <input type="text"placeholder="3 caractères minimum"  id="name"> <br>
+                <p id="error-nom"></p>
+
+         </div>
+
+            <div class="email">
+                <label for="email" >Entrez votre e-mail</label>
+                <input type="email" placeholder="Votre email" id="email"> <br>
+                <p id="error-email"></p>
+            </div>
+
+            <div class="mdp">
+                <label for="password"> Mot de passe</label>
+                <input type="password"  placeholder="Votre mot de passe" id="mdp"> <br>
+                <p id="mdp-consigne">Au moins un symbole, un chiffre, ainsi que 6 caractères minimum.</p>
+                
+            </div>
+
+            <div class="conf_mdp">
+                <label for="password">Confirmez votre mot de passe</label>
+                <input type="password" placeholder="Confirmez votre mot de passe" id="conf-mdp"> <br>
+                <p id="error-confMdp"></p>
+            </div>
+
+            <button type="submit" id="envoyer">Création du compte</button>
+
+        </form>
+    </div>
+
+    <script src ="validation.js"></script>
+</body>
+</html>
